@@ -1,0 +1,225 @@
+body {
+    font-family: 'Arial', sans-serif; /
+}
+
+.logo-titulo { 
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500; 
+    color: #ffffff; 
+    font-size: 2em; 
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+}
+
+.contenido-crud h1 {
+    font-family: 'Oswald', sans-serif; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #444;
+    text-align: center;
+    margin: 20px auto 30px;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.tabla-contenedor {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    max-width: 900px; 
+    margin: 0 auto;
+}
+
+.contenido-crud table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif; 
+}
+
+.contenido-crud th, 
+.contenido-crud td {
+    padding: 15px;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #eef0f3;
+    font-size: 14px;
+    color: #555;
+}
+
+.contenido-crud th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.contenido-crud tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.contenido-crud td.no-data {
+    text-align: center;
+    color: #888;
+    padding: 30px 0;
+}
+
+.contenido-crud .acciones {
+    display: flex;         
+    flex-direction: column; 
+    gap: 5px;       
+    align-items: stretch;  
+}
+
+.contenido-crud .acciones a.btn-accion {
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: white;
+    transition: opacity 0.2s;
+    text-align: center; 
+}
+
+.contenido-crud .acciones a.btn-accion:last-child {
+    margin-right: 0;
+}
+
+.contenido-crud .acciones a.btn-accion:hover {
+    opacity: 0.8;
+}
+
+.btn-editar { background-color: #007bff; }
+.btn-eliminar { background-color: #dc3545; }
+.btn-estado { background-color: #28a745; }
+
+.imagen-vehiculo {
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+.status-disponible { background-color: #28a745; }
+.status-vendido { background-color: #ffc107; }
+
+.btn-ver {
+    padding: 5px 10px;
+    background-color: #5a7a94; 
+    color: white; 
+    border: 1px solid #688da9; 
+    border-radius: 5px; 
+    font-size: 13px;
+    font-weight: 600; 
+    font-family: Arial, sans-serif; 
+    cursor: pointer; 
+    transition: all 0.2s ease; 
+}
+
+.btn-ver:hover {
+    background-color: #5f6569; 
+    border-color: #506b86ef;
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+}
+
+.btn-ver:active {
+    transform: translateY(0); 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); 
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 115%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; 
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 700px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    position: relative;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modal-body h2 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.detalles-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.detalles-grid ul {
+    list-style-type: none;
+    padding: 0;
+    width: 48%; 
+    min-width: 250px; 
+}
+
+.detalles-grid li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 15px;
+}
+
+.detalles-extra, .detalles-otros {
+    margin-top: 20px;
+}
+
+.detalles-otros p {
+    background-color: #f9f9f9;
+    border-left: 3px solid #007bff;
+    padding: 10px;
+    white-space: pre-wrap; 
+}
+
+.doc-presente {
+    color: #28a745; 
+    font-weight: bold;
+}
+
+.doc-ausente {
+    color: #dc3545; 
+}
+
+

@@ -1,0 +1,501 @@
+/* ================ SIDEBAR ================ */
+.navbar-lateral {
+    position: absolute; /* Posicionamiento: cómo se ubica el elemento. */
+    top: 0;             /* Posición desde el borde superior. */
+    left: 0;            /* Posición desde el borde izquierdo. */
+    width: 250px;       /* Ancho del sidebar. */
+    height: 100%;       /* Altura del sidebar al 100% de su contenedor. */
+    z-index: 2;         /* Orden de apilamiento (está por encima de otros elementos con menor z-index). */
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra que se extiende de izquierda a derecha. */
+}
+
+.nav-lateral-divider {
+    width: 90%;         /* Ancho del divisor. */
+    margin: 0 auto;     /* Centra el divisor horizontalmente. */
+    border-top: 1px solid rgba(255, 255, 255, 0.322); /* Borde superior como línea divisoria. */
+}
+
+.container-menu-movile {
+    height: 100% !important; /* Altura al 100% (¡importante para sobrescribir!). */
+    background-color: #000641; /* Color de fondo del contenedor del menú móvil. */
+}
+
+.logo {
+    height: 75px;      /* Altura del área del logo. */
+    line-height: 75px; /* Altura de línea para centrar verticalmente el texto/icono. */
+    overflow: hidden;  /* Oculta cualquier contenido que se desborde del área. */
+    color: #fff;       /* Color del texto/icono del logo. */
+    text-align: center; /* Alineación horizontal del texto/icono. */
+    font-size: 25px;   /* Tamaño de fuente del texto del logo. */
+}
+
+.dropdown-menu-button:hover {
+    background: #00042b; /* Color de fondo al pasar el ratón por los botones de submenú. */
+}
+
+.content-page-container {
+    position: relative; /* Posicionamiento relativo. */
+    height: 100%;       /* Altura al 100%. */
+    width: 100%;        /* Ancho al 100%. */
+    padding-left: 150px; /* Relleno a la izquierda para acomodar el sidebar. */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho y alto. */
+    z-index: 1;         /* Orden de apilamiento (está debajo del sidebar). */
+    background-color: #fff; /* Color de fondo del área de contenido. */
+}
+
+.nav-lateral-list-menu ul li {
+    margin: 0;          /* Elimina márgenes. */
+    padding: 0;         /* Elimina rellenos. */
+    display: block;     /* Muestra cada elemento de lista como un bloque. */
+}
+
+.nav-lateral-list-menu ul li a,
+.nav-lateral-list-menu ul li div {
+    width: 100%;        /* Ocupa el 100% del ancho del padre. */
+    min-height: 45px;   /* Altura mínima del ítem. */
+    line-height: 45px;  /* Altura de línea para centrar verticalmente. */
+    display: block;     /* Muestra como bloque. */
+    padding: 1px;      /* Relleno general. */
+    padding-left: 20px; /* Relleno adicional a la izquierda. */
+    color: #fff;       /* Color del texto. */
+    text-decoration: none; /* Sin subrayado para enlaces. */
+    font-size: 15px;    /* Tamaño de fuente. */
+    transition: .3s all ease-in-out; /* Transición suave para todos los cambios. */
+}
+
+.nav-lateral-list-menu i {
+    font-size: 20px;    /* Tamaño de fuente de los iconos. */
+    line-height: 50px;  /* Altura de línea para centrar verticalmente iconos. */
+}
+
+.nav-lateral-list-menu > ul > li > a:hover {
+    background-color: #00042b; /* Color de fondo al pasar el ratón por los ítems principales. */
+}
+
+.nav-lateral-list-menu ul li a:active,
+.nav-lateral-list-menu ul li a:focus {
+    outline: none; /* Elimina el contorno de enfoque/activo. */
+}
+
+.nav-lateral-list-menu ul li ul {
+    display: none;      /* Oculta los submenús por defecto. */
+    background-color: #00031b; /* Color de fondo de los submenús. */
+}
+
+.nav-lateral-list-menu ul li div {
+    cursor: pointer;    /* Cambia el cursor a puntero. */
+}
+
+.nav-lateral-list-menu ul li ul li a {
+    padding-left: 20px; /* Relleno a la izquierda para los ítems del submenú. */
+}
+
+.nav-lateral-list-menu ul li ul li a:hover {
+    background-color: #00031b; /* Color de fondo al pasar el ratón por los ítems del submenú. */
+    box-shadow: 3px 0px 10px rgba(255, 255, 255, 0.233); /* Sombra para los ítems del submenú al pasar el ratón. */
+}
+
+.dropdown-menu-button-active {
+    background-color: #00042b; /* Color de fondo del botón de dropdown cuando está activo. */
+    box-shadow: 3px 0px 10px rgba(255, 255, 255, 0.233); /* Sombra para el botón de dropdown activo. */
+}
+.nav-lateral-list-menu > ul > li > ul {
+    padding-left: 20px !important;
+}
+
+/* Define una sangría específica solo para el tercer nivel */
+.nav-lateral-list-menu > ul > li > ul > li > ul {
+    padding-left: 20px !important; /* Puedes ajustar este valor si quieres más o menos espacio */
+}
+
+/*Mostrar/ocultar NavLateral ================*/
+.desktopMenu.navbar-lateral{
+    display: none;
+}
+.desktopMenu.content-page-container{
+    width: 100%;
+    padding-left: 0;
+}
+
+/* Menú superior de usuario */
+.navbar-user-top {
+    background-color: var(--second-color);
+    height: 55px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 7;
+}
+
+.navbar-user-top > ul {
+    height: 55px;
+    padding: 0 15px;
+    margin: 0;
+}
+
+.navbar-user-top > ul > li {
+    float: right;
+    color: #fff;
+    height: 55px;
+    margin: 0 12px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 55px;
+}
+
+.navbar-user-top > ul > li:hover {
+    color: #F5F5F5;
+}
+
+.navbar-user-top > ul > li > i {
+    font-size: 27px;
+    line-height: 55px;
+}
+
+.navbar-user-top > ul > figure > img {
+    width: 35px;
+    float: right;
+    height: 35px;
+    border: 2px solid #728890;
+    margin-top: 10px;
+}
+
+nav.navbar-user-top.full-reset {
+    background: #030b58 !important;
+}
+
+/* Pie de página (footer) */
+.footer {
+    background-color: var(--first-color);
+    height: auto;
+    color: #fff;
+    padding-top: 20px;
+    margin-top: 70px;
+}
+
+.footer-copyright {
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    background-color: var(--second-color);
+}
+
+.footer-social {
+    cursor: pointer;
+    margin: 0 2px;
+    transition: all .3s ease-in-out;
+}
+
+.footer-social:hover {
+    color: #FFD054;
+    transform: scale(1.7);
+}
+
+/* ========== proveedor_list.php ========== */
+
+.proveedor-theme .proveedor-list-container {
+    width: 90%;
+    max-width: 900px;
+    margin: px auto;
+    background: #fff;
+    padding: 0px;
+    box-shadow: 0 px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.proveedor-theme .proveedor-list-container h2 {
+    color: #555;
+    font-family: "Titulos", sans-serif;
+    font-size: 1.6em;
+    border-bottom: 2px solid #cccccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.proveedor-theme .proveedor-list-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.proveedor-theme .proveedor-list-container th,
+.proveedor-theme .proveedor-list-container td {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: left;
+    font-family: "Parrafos", sans-serif;
+    font-size: 15px;
+    color: #444;
+}
+
+.proveedor-theme .proveedor-list-container th {
+    background-color: #f7f7f7 !important;
+    color: #333 !important;
+    font-weight: 800;
+}
+
+.proveedor-theme .proveedor-list-container tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.proveedor-theme .proveedor-list-container tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.proveedor-theme .proveedor-list-container .acciones {
+    text-align: center;
+}
+
+.proveedor-theme .proveedor-list-container button {
+    margin: 2px 2px;
+    padding: 6px 6px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.7em;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.proveedor-theme .proveedor-list-container .btn-editar {
+    background-color: #0097dd;
+    margin: 2px 2px;
+    padding: 6px 6px;
+    border: none;
+    border-radius: 6px;
+    font-size: px;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.proveedor-theme .proveedor-list-container .btn-editar:hover {
+    background-color: #007bb5;
+}
+
+.proveedor-theme .proveedor-list-container .btn-eliminar {
+    background-color: #dc3545;
+    margin: 2px 2px;
+    padding: 6px 6px;
+    border: none;
+    border-radius: 6px;
+    font-size:px ;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+
+.proveedor-theme .proveedor-list-container .btn-agregar {
+    background-color: #030b58;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 10px 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.proveedor-theme .proveedor-list-container .btn-agregar:hover {
+    background-color: #2135ed;
+}
+
+
+/* Responsive tabla */
+@media (max-width: 768px) {
+    .proveedor-theme .proveedor-list-container {
+        width: 95%;
+        padding: 15px 10px;
+    }
+    .proveedor-theme .proveedor-list-container table,
+    .proveedor-theme .proveedor-list-container thead,
+    .proveedor-theme .proveedor-list-container tbody,
+    .proveedor-theme .proveedor-list-container th,
+    .proveedor-theme .proveedor-list-container td,
+    .proveedor-theme .proveedor-list-container tr {
+        display: block;
+        width: 100%;
+    }
+    .proveedor-theme .proveedor-list-container thead tr {
+        display: none;
+    }
+    .proveedor-theme .proveedor-list-container tbody tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding: 12px;
+    }
+    .proveedor-theme .proveedor-list-container tbody td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        font-size: 0.9em;
+    }
+    .proveedor-theme .proveedor-list-container tbody td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+        color: #333;
+        font-family: "Titulos", sans-serif;
+        font-size: 0.95em;
+    }
+}
+
+/* ========== proveedor_form.php ========== */
+
+.proveedor-theme .proveedor-form-container {
+    width: 90%;
+    max-width: 650px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.94);
+    padding: 35px 30px;
+    border-radius: 9px;
+    color: #090909;
+    font-family: "Parrafos", sans-serif;
+    box-shadow: 0 2px 10px rgba(141, 147, 147, 0.815);
+}
+
+.proveedor-theme .proveedor-form-container h2 {
+    font-family: "Titulos", sans-serif;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #F0F0F0;
+    border-bottom: 2px solid #424346;
+    padding-bottom: 8px;
+}
+
+.proveedor-theme .proveedor-form-container .campo {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.proveedor-theme .proveedor-form-container label {
+    font-size: 1em;
+    margin-bottom: 4px;
+    color: #222324;
+}
+
+.proveedor-theme .proveedor-form-container input[type="text"],
+.proveedor-theme .proveedor-form-container input[type="email"],
+.proveedor-theme .proveedor-form-container input[type="tel"],
+.proveedor-theme .proveedor-form-container select,
+.proveedor-theme .proveedor-form-container textarea {
+    padding: 10px 145px;
+    font-size: 1em;
+    border-radius: 4px;
+    border: 1px solid #d0e0f1 !important;
+    background-color: #d0dbe5dc !important;
+    color: #030303 !important;
+    transition: border-color 0.3s ease;
+    font-family: "Parrafos", sans-serif;
+}
+
+.proveedor-theme .proveedor-form-container input[type="text"]:focus,
+.proveedor-theme .proveedor-form-container input[type="email"]:focus,
+.proveedor-theme .proveedor-form-container input[type="tel"]:focus,
+.proveedor-theme .proveedor-form-container select:focus,
+.proveedor-theme .proveedor-form-container textarea:focus {
+    outline: none;
+    border-color: #00aaff;
+    background-color: #073059;
+}
+
+/* Botón de guardar */
+.proveedor-theme .proveedor-form-container button[type="submit"] {
+    width: 80%;
+    padding: 12px 15px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 15px auto;
+    font-family: "Titulos", sans-serif;
+    background-color: #0984bd !important;
+    color: #fff !important;
+    display: block;
+    text-align: center;
+}
+
+.proveedor-theme .proveedor-form-container button[type="submit"]:hover {
+    background-color: #005f86 !important;
+}
+
+/* Botón/enlace de volver */
+.proveedor-theme .proveedor-form-container .btn-volver {
+    width: 80%;
+    padding: 12px 15px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 15px auto;
+    font-family: "Titulos", sans-serif;
+    background-color: #a2c6e6;
+    color: #fff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.proveedor-theme .proveedor-form-container .btn-volver:hover {
+    background-color: #5a6268;
+}
+
+
+.proveedor-theme .proveedor-form-container .mensaje {
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-align: center;
+    display: none;
+}
+
+.proveedor-theme .proveedor-form-container .mensaje.error {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.proveedor-theme .proveedor-form-container .mensaje.exito {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .proveedor-theme .proveedor-form-container {
+        padding: 20px 15px;
+    }
+}
+
+/* Reseteo de Bootstrap */
+.proveedor-theme .form-control {
+    all: unset;
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+}

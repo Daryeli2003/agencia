@@ -1,0 +1,208 @@
+.contenido-pagina {
+    max-width: 850px; 
+    margin: 40px auto; 
+    padding: 0 20px; 
+}
+.contenido-pagina h1 {
+    font-family: 'Oswald', sans-serif; 
+    text-transform: uppercase;        
+    letter-spacing: 1.5px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #333;   
+    text-align: center;
+    margin: 20px auto 40px; 
+    border-bottom: none;
+    padding-bottom: 0;
+}
+#formularioVehiculo {
+    max-width: 700px;
+    margin: 35px auto;
+    padding: 20px;
+    background-color: #f7f6f6;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgb(0 0 0 / 36%);
+}
+
+#formularioVehiculo legend {
+    width: 100%;
+    text-align:center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #dadada;
+}
+
+#formularioVehiculo fieldset {
+    border: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+}
+#formularioVehiculo .campo { display: flex; flex-direction: column; }
+#formularioVehiculo .grid-full-width { grid-column: 1 / -1; }
+#formularioVehiculo .campo label { font-size: 15px; font-weight: 580; color: #333; margin-bottom: 6px; }
+
+#formularioVehiculo .campo input[type="text"],
+#formularioVehiculo .campo input[type="number"],
+#formularioVehiculo .campo input[type="date"],
+#formularioVehiculo .campo select {
+    font-size: 16px;    
+    color: #212529; 
+    height: 40px;  
+    padding: 0 10px; 
+    width: 100%;
+    border: 1px solid #a9aeb2;
+    border-radius: 5px;
+    box-sizing: border-box;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#formularioVehiculo .campo textarea {
+    padding: 10px 10px;
+    min-height: 100px;
+    font-size: 15px; 
+    color: #212529; 
+    border: 1px solid #a7aaae;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#formularioVehiculo .custom-file-input {
+    display: flex;
+    align-items: center;
+    height: 45px; 
+    border: 1px solid #959ba2;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 5px 0 0; 
+}
+
+#formularioVehiculo .custom-file-input input[type="file"] {
+    display: none;
+}
+
+#formularioVehiculo .custom-file-input .file-button {
+    background-color: #dbe4eccf;
+    color: #070707;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-right: 1px solid #d2e3f4;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap; 
+}
+
+#formularioVehiculo .custom-file-input .file-name {
+    padding-left: 20px;
+    font-size: 15px;
+    color: #222527;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+#formularioVehiculo input:focus,
+#formularioVehiculo select:focus,
+#formularioVehiculo textarea:focus {
+    outline: none;
+    border-color: #000152;
+    box-shadow: 0 0 0 3px rgba(0, 1, 82, 0.15);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px 25px;
+}
+
+button[type="submit"] {
+    grid-column: 1 / -1; 
+    width: 100%;
+    background-color: #000152;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px; 
+}
+
+button[type="submit"]:hover {
+    background-color: #0c0736;
+}
+
+
+.checkbox-section .group-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px 25px; 
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: flex-start; 
+}
+
+.checkbox-item input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px; 
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.checkbox-item label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.4; 
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+
+@media (max-width: 900px) {
+    .checkbox-grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+@media (max-width: 650px) {
+    .checkbox-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 450px) {
+    .checkbox-grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 768px) {
+    #formularioVehiculo fieldset {
+        grid-template-columns: 1fr; /
+    }
+}

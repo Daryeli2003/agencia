@@ -1,0 +1,100 @@
+.contenido-pagina {
+    max-width: 620px; 
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.contenido-pagina h1 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #444;
+    text-align: center;
+    margin: 20px auto 40px;
+}
+
+.content-box {
+    background-color: #f7f6f6;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 25%), 0 2px 4px -1px rgb(0 0 0 / 65%);
+    margin-bottom: 30px;
+}
+
+.content-box h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 0 auto 25px;
+    text-align: center;
+}
+
+.form-inline {
+    display: flex;
+    gap: 10px;
+}
+
+.form-inline label {
+    display: none;
+}
+.form-inline input[type="text"] {
+    flex-grow: 1; 
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.btn-principal {
+    background-color: #000152; 
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-principal:hover {
+    background-color: #020016;
+}
+
+.content-box table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.content-box th,
+.content-box td {
+    padding: 18px 0;
+    text-align: left;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.content-box tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.content-box th:last-child,
+.content-box td.acciones {
+    text-align: right; 
+}
+
+.content-box .acciones a.btn-accion {
+    text-decoration: none;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 8px;
+    transition: opacity 0.2s ease;
+    display: inline-block;
+}
+.content-box .acciones a.btn-accion:hover {
+    opacity: 0.85;
+}
+.btn-editar { background-color: #1777b8f0; }
+.btn-eliminar { background-color: #ab1f11f2; }

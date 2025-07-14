@@ -1,0 +1,451 @@
+@font-face {
+    font-family: "Titulos";
+    src: url("../fonts/AlegreyaSansSC-Regular.ttf"), url("../fonts/AlegreyaSansSC-Regular.eot"), url("../fonts/AlegreyaSansSC-Regular.woff"), url("../fonts/AlegreyaSansSC-Regular.woff2"), url("../fonts/AlegreyaSansSC-Regular.svg");
+}
+
+@font-face {
+    font-family: "Parrafos";
+    src: url("../fonts/OpenSans-CondLight.ttf"), url("../fonts/OpenSans-CondLight.eot"), url("../fonts/OpenSans-CondLight.woff"), url("../fonts/OpenSans-CondLight.woff2"), url("../fonts/OpenSans-CondLight.svg");
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+    font-family: "Parrafos" !important;
+}
+
+.all-tittles {
+    font-family: "Titulos" !important;
+}
+
+.center-box {
+    margin: 0 auto;
+}
+
+.full-reset {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+}
+
+.text-help {
+    font-size: 19px;
+}
+
+/* ================ LOGIN ================ */
+
+.login-container{
+  background-image: url('../imagenes/dfsk-cl_blog_tipos-de-vehiculos-conoce-cuales-existen-en-chile-03.jpg');
+  background-size:cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.form-container{
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(17 60 85 / 94%);
+    position: relative;
+    width: 90%;
+    max-width: 350px;
+}
+.group-material-login{ 
+    position:relative; 
+    margin-bottom:25px; 
+}
+.material-login-control,
+.material-control-login{
+  background-color: transparent;
+  font-size:17px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid #fff;
+  outline:none;
+}
+.material-login-control:focus{ outline:none; }
+.group-material-login label{
+  color:#fff; 
+  font-size:17px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:all 0.2s ease; 
+}
+/* Estado activo */
+input.material-login-control:focus:valid ~ label,
+input.material-login-control:valid ~ label{
+  top:-18px;
+  font-size:13px;
+  color:#fff;
+}
+input.material-login-control:focus:invalid:required,
+input.material-login-control:invalid:required{
+  outline: none;
+  box-shadow: none;
+}
+.btn-login {
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    box-shadow: none;
+    font-size: 19px;
+    line-height: 19px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: -5%;
+    right: 3%;
+}
+.btn-login:hover{
+    border: none;
+    box-shadow: none;
+}
+.btn-login:focus,
+.btn-login:active{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.btn-registro {
+    background-color: transparent;
+    text-align: center;
+    box-shadow: none;
+    font-size: 19px;
+    line-height: 19px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    bottom: -5%;
+    right: 3%;
+}
+.btn-registro:hover{
+    border: none;
+    box-shadow: none;
+}
+.btn-registro:focus,
+.btn-registro:active{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+label{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+.radio-inline label:hover{
+    cursor: pointer;
+}
+select.material-control-login{
+    background: rgb(11 41 59)  ;
+}
+select.material-control-login:hover{
+    cursor: pointer;
+}
+
+
+/* ================ SIDEBAR ================ */
+.navbar-lateral {
+    position: absolute; /* Posicionamiento: cómo se ubica el elemento. */
+    top: 0;             /* Posición desde el borde superior. */
+    left: 0;            /* Posición desde el borde izquierdo. */
+    width: 250px;       /* Ancho del sidebar. */
+    height: 100%;       /* Altura del sidebar al 100% de su contenedor. */
+    z-index: 2;         /* Orden de apilamiento (está por encima de otros elementos con menor z-index). */
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra que se extiende de izquierda a derecha. */
+}
+
+.nav-lateral-divider {
+    width: 90%;         /* Ancho del divisor. */
+    margin: 0 auto;     /* Centra el divisor horizontalmente. */
+    border-top: 1px solid rgba(255, 255, 255, 0.322); /* Borde superior como línea divisoria. */
+}
+
+.container-menu-movile {
+    height: 100% !important; /* Altura al 100% (¡importante para sobrescribir!). */
+    background-color: #000641; /* Color de fondo del contenedor del menú móvil. */
+}
+
+.logo {
+    height: 75px;      /* Altura del área del logo. */
+    line-height: 75px; /* Altura de línea para centrar verticalmente el texto/icono. */
+    overflow: hidden;  /* Oculta cualquier contenido que se desborde del área. */
+    color: #fff;       /* Color del texto/icono del logo. */
+    text-align: center; /* Alineación horizontal del texto/icono. */
+    font-size: 25px;   /* Tamaño de fuente del texto del logo. */
+}
+
+.dropdown-menu-button:hover {
+    background: #00042b; /* Color de fondo al pasar el ratón por los botones de submenú. */
+}
+
+.content-page-container {
+    position: relative; /* Posicionamiento relativo. */
+    height: 100%;       /* Altura al 100%. */
+    width: 100%;        /* Ancho al 100%. */
+    padding-left: 250px; /* Relleno a la izquierda para acomodar el sidebar. */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho y alto. */
+    z-index: 1;         /* Orden de apilamiento (está debajo del sidebar). */
+    background-color: #fff; /* Color de fondo del área de contenido. */
+}
+
+.nav-lateral-list-menu ul li {
+    margin: 0;          /* Elimina márgenes. */
+    padding: 0;         /* Elimina rellenos. */
+    display: block;     /* Muestra cada elemento de lista como un bloque. */
+}
+
+.nav-lateral-list-menu ul li a,
+.nav-lateral-list-menu ul li div {
+    width: 100%;        /* Ocupa el 100% del ancho del padre. */
+    min-height: 45px;   /* Altura mínima del ítem. */
+    line-height: 45px;  /* Altura de línea para centrar verticalmente. */
+    display: block;     /* Muestra como bloque. */
+    padding: 1px;      /* Relleno general. */
+    padding-left: 20px; /* Relleno adicional a la izquierda. */
+    color: #fff;       /* Color del texto. */
+    text-decoration: none; /* Sin subrayado para enlaces. */
+    font-size: 15px;    /* Tamaño de fuente. */
+    transition: .3s all ease-in-out; /* Transición suave para todos los cambios. */
+}
+
+.nav-lateral-list-menu i {
+    font-size: 20px;    /* Tamaño de fuente de los iconos. */
+    line-height: 50px;  /* Altura de línea para centrar verticalmente iconos. */
+}
+
+.nav-lateral-list-menu > ul > li > a:hover {
+    background-color: #00042b; /* Color de fondo al pasar el ratón por los ítems principales. */
+}
+
+.nav-lateral-list-menu ul li a:active,
+.nav-lateral-list-menu ul li a:focus {
+    outline: none; /* Elimina el contorno de enfoque/activo. */
+}
+
+.nav-lateral-list-menu ul li ul {
+    display: none;      /* Oculta los submenús por defecto. */
+    background-color: #00031b; /* Color de fondo de los submenús. */
+}
+
+.nav-lateral-list-menu ul li div {
+    cursor: pointer;    /* Cambia el cursor a puntero. */
+}
+
+.nav-lateral-list-menu ul li ul li a {
+    padding-left: 20px; /* Relleno a la izquierda para los ítems del submenú. */
+}
+
+.nav-lateral-list-menu ul li ul li a:hover {
+    background-color: #00031b; /* Color de fondo al pasar el ratón por los ítems del submenú. */
+    box-shadow: 3px 0px 10px rgba(255, 255, 255, 0.233); /* Sombra para los ítems del submenú al pasar el ratón. */
+}
+
+.dropdown-menu-button-active {
+    background-color: #00042b; /* Color de fondo del botón de dropdown cuando está activo. */
+    box-shadow: 3px 0px 10px rgba(255, 255, 255, 0.233); /* Sombra para el botón de dropdown activo. */
+}
+.nav-lateral-list-menu > ul > li > ul {
+    padding-left: 20px !important;
+}
+
+/* Define una sangría específica solo para el tercer nivel */
+.nav-lateral-list-menu > ul > li > ul > li > ul {
+    padding-left: 20px !important; /* Puedes ajustar este valor si quieres más o menos espacio */
+}
+
+/*Mostrar/ocultar NavLateral ================*/
+.desktopMenu.navbar-lateral{
+    display: none;
+}
+.desktopMenu.content-page-container{
+    width: 100%;
+    padding-left: 0;
+}
+
+/* Menú superior de usuario */
+.navbar-user-top {
+    background-color: var(--second-color);
+    height: 55px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 7;
+}
+
+.navbar-user-top > ul {
+    height: 55px;
+    padding: 0 15px;
+    margin: 0;
+}
+
+.navbar-user-top > ul > li {
+    display: inline-block;
+    float: right;
+    color: #fff;
+    height: 55px;
+    margin: 0 12px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 55px;
+}
+
+.navbar-user-top > ul > li:hover {
+    color: #F5F5F5;
+}
+
+.navbar-user-top > ul > li > i {
+    font-size: 27px;
+    line-height: 55px;
+}
+
+.navbar-user-top > ul > figure > img {
+    width: 35px;
+    float: right;
+    height: 35px;
+    border: 2px solid #728890;
+    margin-top: 10px;
+}
+
+nav.navbar-user-top.full-reset {
+    background: #030b58 !important;
+}
+
+/* Pie de página (footer) */
+.footer {
+    background-color: var(--first-color);
+    height: auto;
+    color: #fff;
+    padding-top: 20px;
+    margin-top: 70px;
+}
+
+.footer-copyright {
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    background-color: var(--second-color);
+}
+
+.footer-social {
+    cursor: pointer;
+    margin: 0 2px;
+    transition: all .3s ease-in-out;
+}
+
+.footer-social:hover {
+    color: #FFD054;
+    transform: scale(1.7);
+}
+
+/* Contenedores de formularios (modal de ayuda) */
+.modal-body {
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.contenedor-boton-web {
+    width: 100%;
+    text-align: center; /* Centra el botón */
+    margin-top: 30px;   /* Añade espacio arriba del botón */
+    padding-bottom: 30px; /* Añade espacio debajo del botón */
+}
+
+/* Estilos para el botón "Ir a la Página Web" */
+.btn-ir-a-web {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 25px; /* Hacemos el botón un poco más grande */
+    background-color: #28a745; /* Un color verde para diferenciarlo */
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ir-a-web:hover {
+    background-color: #218838; /* Verde más oscuro al pasar el ratón */
+    color: #fff;
+}
+
+/* Media queries */
+@media (max-width: 767px) {
+    .navbar-lateral {
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+        background-color: transparent;
+        background-image: none;
+        display: none;
+    }
+
+    .container-menu-movile {
+        width: 320px;
+        position: relative;
+        z-index: 7;
+        background-color: var(--second-color);
+    }
+
+    .content-page-container {
+        padding-left: 0;
+    }
+
+    .font-movile-menu {
+        position: fixed;
+        background-color: rgba(0, 0, 0, .5);
+        z-index: 2;
+        height: 100%;
+        width: 100%;
+    }
+
+    .navbar-user-top > ul > li {
+        margin: 0 10px;
+    }
+
+    .modal-body {
+        max-height: 300px;
+    }
+
+    .navbar-user-top > ul > li:hover {
+        color: #2f3a4f !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal-content {
+        margin-left: 10%;
+    }
+}
